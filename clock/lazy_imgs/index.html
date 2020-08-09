@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lazy Loading...</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        h1 {
+            color: #313131;
+            font-size: 60px;
+            text-align: center;
+            margin-top: 100px;
+            margin-bottom: 100px;
+        }
+
+        .lazy {
+            display: block;
+            width: 100%;
+            max-width: 640px;
+            margin: 0 auto 100px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Lazy Loading Images...</h1>
+    <!--The data attribute allows to get data from html into javascript-->
+    <img src="lazy_img.jpg" data-src="img_1.jpg" name="image1" id="image1Id" class="lazy">
+    <img src="lazy_img.jpg" data-src="img_2.jpg" name="image2" id="image2Id" class="lazy">
+    <script src="main.js"></script>
+</body>
+</html>
