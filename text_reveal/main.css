@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+.page-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  min-height: 100vh;
+  background-color: #222;
+}
+
+.swipe-in-text {
+  position: relative;
+}
+
+.swipe-in-text:after {
+  display: block;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 100%;
+  width: 0%;
+  bottom: 0;
+  z-index: 1;
+  background-color: #FF5858;
+  animation: swipe-in-text 1s ease-out 1s forwards;
+}
+
+.swipe-in-text .text {
+  color: #FFF;
+  font-size: 72px;
+  font-weight: 900;
+  text-transform: uppercase;
+  opacity: 0;
+  animation: fade-in-text 0.01s linear 1.5s forwards;
+}
+
+.swipe-in-text .text.small {
+  font-size: 32px;
+  font-weight: 500;
+}
+
+.swipe-in-text.white:after {
+  background-color: #FFF;
+}
+
+.swipe-in-text.white .text {
+  animation-delay: 2s;
+}
+
+@keyframes swipe-in-text {
+  0% {
+    width: 0%;
+    right: 100%;
+    left: 0;
+  }
+  50% {
+    left: 0;
+    width: 100%;
+    right: 0%;
+  }
+  100% {
+    width: 0%;
+    left: 100%;
+    right: 0%;
+  }
+}
+
+@keyframes fade-in-text {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
