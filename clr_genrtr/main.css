@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #FF5858;
+}
+
+.colour {
+    color: #FFF;
+    font-size: 72px;
+    font-weight: 900;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+}
+
+.generate {
+    appearance: none;
+    background: none;
+    outline: none;
+    border: 5px solid #FFF;
+    padding: 1rem 2rem;
+    font-size: 2rem;
+    color: #FFF;
+    font-weight: 700;
+    background-image: linear-gradient(to bottom, transparent 50%, #2ECC5D 50%);
+    background-size: 100% 200%;
+    transition: 0.5s ease-out;
+
+    cursor: pointer;
+}
+
+.generate:hover {
+    background-position: 0 100%;
+    box-shadow: inset 4px 4px rgba(0, 0, 0, 0.2);
+    text-shadow: 4px 4px rgba(0, 0, 0, 0.2);
+}
