@@ -19,5 +19,5 @@ function tick() {
     hand_hr.style.transform = `translateY(-50%) rotate(${hoursInDegrees}deg)`;
 }
 //For ticking the clock, uncomment the two lines below and watch in browser
-// tick();
-// setInterval(tick, 1000);
+tick();
+setInterval(tick, 1000);
