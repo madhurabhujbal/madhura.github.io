@@ -1,23 +1,25 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 .image-wrap {
-    max-width: 640px;
-    margin: 50px auto;
+  max-width: 75%;
+  margin: 50px auto;
 }
 
 .image {
-    width: 100%; /* Width of image is 100% of its parent*/
-    padding-top: calc(100% / (16/9)); /* This property will give height of image for a given width. e.g 100% here is max-width of image i.e 640 px.*/
-    background-image: url('https://www.topgear.com/sites/default/files/styles/16x9_1280w/public/news-listicle/image/2017/04/1_1.jpg');
-    background-size: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
+  width: 100%; /* Width of image is 100% of its parent*/
+  padding-top: calc(
+    100% / (16 / 9)
+  ); /* This property will give height of image for a given width. e.g 100% here is max-width of image i.e 640 px.*/
+  background-image: url("https://www.topgear.com/sites/default/files/styles/16x9_1280w/public/news-listicle/image/2017/04/1_1.jpg");
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .image:hover {
-    background-size: 175%;
+  background-size: 175%;
 }
