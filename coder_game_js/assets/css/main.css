@@ -1,6 +1,7 @@
 * {
-  margin: 0em;
-  padding: 10px;
+  margin: 0.6em;
+  padding: 5px;
+  text-align: center;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
